@@ -365,7 +365,7 @@ progress::-moz-progress-bar {
   display:flex;
   justify-content:space-between;
   gap:10px;
-  font-size:10px;
+  font-size:12px;
   color:#66765b;
 }
 
@@ -514,7 +514,7 @@ kbd {
 }
 
 .active-summary {
-  font-size:10px;
+  font-size:12px;
   color:#7c8476;
   white-space:nowrap;
 }
@@ -596,7 +596,7 @@ kbd {
 }
 
 .task-text {
-  font-size:13px;
+  font-size:15px;
   line-height:21px;
   overflow-wrap:anywhere;
   min-width:0;
@@ -713,7 +713,7 @@ kbd {
   border-top:1px solid var(--line);
   padding:20px 0 30px;
   margin-top:27px;
-  font-size:9px;
+  font-size:11px;
   color:#858c7e;
 }
 
@@ -880,7 +880,7 @@ kbd {
     gap:5px;
   }
   .input-meta {
-    font-size:9px;
+    font-size:11px;
   }
   .list-toolbar {
     margin-top:25px;
@@ -906,7 +906,7 @@ kbd {
     gap:11px;
   }
   .task-text {
-    font-size:12px;
+    font-size:14px;
     line-height:20px;
   }
   .main-footer {
