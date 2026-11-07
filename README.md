@@ -6,9 +6,9 @@
 
 ## Демонстрация
 
-[Исходный код на GitHub](https://github.com/apestalina-byte/focus-todo).
+🌐 [Открыть приложение «ФОКУС»](https://apestalina-byte.github.io/focus-todo/)
 
-Публикация GitHub Pages ожидает включения в настройках репозитория. Подтверждённая ссылка будет добавлена после проверки рабочего сайта.
+💻 [Исходный код на GitHub](https://github.com/apestalina-byte/focus-todo)
 
 ![Десктопная версия ФОКУС](docs/desktop.jpg)
 
