@@ -2,7 +2,7 @@
   --bg:#f7f8f5;
   --paper:#fff;
   --ink:#29352f;
-  --muted:#737c76;
+  --muted:#606d63;
   --green:#315b49;
   --line:#e3e7df;
   --soft:#eef2e8;
@@ -202,7 +202,7 @@ svg {
 }
 
 .sidebar-note small {
-  color:#79816f;
+  color:#5b6a58;
   font-size:11px;
 }
 
@@ -316,7 +316,7 @@ h1>span {
 
 .progress-top p {
   font-size:12px;
-  color:#738067;
+  color:#58684e;
   margin:7px 0 0;
 }
 
@@ -329,7 +329,7 @@ h1>span {
 
 .progress-percent span {
   font-size:18px;
-  color:#859576;
+  color:#607456;
   margin-left:3px;
 }
 
@@ -366,11 +366,11 @@ progress::-moz-progress-bar {
   justify-content:space-between;
   gap:10px;
   font-size:12px;
-  color:#66765b;
+  color:#58684e;
 }
 
 .progress-bottom>span:last-child {
-  color:#78866e;
+  color:#58684e;
 }
 
 #task-form {
@@ -413,7 +413,7 @@ progress::-moz-progress-bar {
 }
 
 .input-wrap input::placeholder {
-  color:#92998c;
+  color:#697669;
 }
 
 .input-wrap input:focus-visible {
@@ -429,7 +429,8 @@ progress::-moz-progress-bar {
   align-items:center;
   gap:9px;
   padding:12px 17px;
-  font-size:12px;
+  min-height:44px;
+  font-size:13px;
   font-weight:550;
 }
 
@@ -452,8 +453,8 @@ progress::-moz-progress-bar {
   justify-content:space-between;
   gap:12px;
   margin:11px 2px 0;
-  color:#7a8275;
-  font-size:10px;
+  color:#596757;
+  font-size:11px;
 }
 
 kbd {
@@ -492,15 +493,16 @@ kbd {
   border-radius:6px;
   background:transparent;
   color:#687261;
-  font-size:11px;
-  padding:8px 11px;
+  font-size:12px;
+  min-height:44px;
+  padding:9px 9px;
   white-space:nowrap;
 }
 
 .filter>span {
-  font-size:10px;
-  margin-left:5px;
-  color:#7a8471;
+  font-size:11px;
+  margin-left:4px;
+  color:#596757;
 }
 
 .filter:hover {
@@ -515,7 +517,7 @@ kbd {
 
 .active-summary {
   font-size:12px;
-  color:#7c8476;
+  color:#596757;
   white-space:nowrap;
 }
 
@@ -597,7 +599,7 @@ kbd {
 
 .task-text {
   font-size:15px;
-  line-height:21px;
+  line-height:23px;
   overflow-wrap:anywhere;
   min-width:0;
 }
@@ -610,7 +612,7 @@ kbd {
 .is-completed .task-text {
   color:#5b6a58;
   text-decoration:line-through;
-  text-decoration-color:#b5bda9;
+  text-decoration-color:#8c9b85;
 }
 
 .delete-button {
@@ -621,7 +623,7 @@ kbd {
   background:transparent;
   border:0;
   border-radius:7px;
-  color:#8e9788;
+  color:#687668;
   flex-shrink:0;
 }
 
@@ -682,9 +684,9 @@ kbd {
 }
 
 .empty-state p {
-  font-size:12px;
+  font-size:13px;
   line-height:1.8;
-  color:#838c7a;
+  color:#5b6a58;
   margin:0;
 }
 
@@ -692,7 +694,8 @@ kbd {
   border:0;
   background:transparent;
   color:#4e7040;
-  font-size:11px;
+  font-size:12px;
+  min-height:44px;
   padding:12px;
   margin-top:10px;
   border-radius:5px;
@@ -714,7 +717,7 @@ kbd {
   padding:20px 0 30px;
   margin-top:27px;
   font-size:11px;
-  color:#858c7e;
+  color:#5b6a58;
 }
 
 .main-footer>span:first-child {
@@ -841,14 +844,14 @@ kbd {
     font-size:36px;
   }
   .intro {
-    font-size:12px;
+    font-size:13px;
     margin:10px 0 24px;
   }
   .progress-card {
     padding:20px 19px 16px;
   }
   .progress-top p {
-    font-size:11px;
+    font-size:12px;
     max-width:230px;
     line-height:1.5;
   }
@@ -856,7 +859,7 @@ kbd {
     font-size:30px;
   }
   .progress-bottom {
-    font-size:9px;
+    font-size:11px;
   }
   .progress-bottom>span:last-child {
     display:none;
@@ -869,13 +872,13 @@ kbd {
     padding-left:12px;
   }
   .input-wrap input {
-    font-size:12px;
+    font-size:14px;
   }
   .input-plus {
     display:none;
   }
   .add-button {
-    font-size:11px;
+    font-size:12px;
     padding:12px 13px;
     gap:5px;
   }
@@ -890,9 +893,9 @@ kbd {
     justify-content:space-between;
   }
   .filter {
-    padding:9px 10px;
+    padding:9px 7px;
     flex:1;
-    font-size:11px;
+    font-size:12px;
   }
   .filter>span {
     margin-left:4px;
@@ -907,13 +910,13 @@ kbd {
   }
   .task-text {
     font-size:14px;
-    line-height:20px;
+    line-height:22px;
   }
   .main-footer {
     flex-direction:column;
     align-items:center;
     gap:10px;
-    font-size:9px;
+    font-size:11px;
     margin-top:24px;
   }
   .empty-state {
