@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f3">
+  <meta name="description" content="ФОКУС — простой список задач. Освободите голову, начните с одного дела. Без регистрации, с сохранением в браузере.">
+  <title>ФОКУС — простой список задач</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к задачам</a>
+  <aside class="sidebar" aria-label="О приложении">
+    <a class="brand" href="./" aria-label="ФОКУС — главная"><span class="brand-mark" aria-hidden="true">ф</span>ФОКУС<span class="brand-dot">.</span></a>
+    <p class="brand-caption">Меньше шума. Больше дела.</p>
+    <div class="workspace-label">ЛИЧНОЕ ПРОСТРАНСТВО</div>
+    <div class="current-page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="m8 12 3 3 5-6"/></svg>Мои задачи<span id="side-count">0</span></div>
+    <div class="sidebar-note"><span class="small-orbit" aria-hidden="true"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4v40M4 24h40M10 10l28 28M10 38l28-28"/></svg></span><p>Большие планы<br>начинаются с <em>маленького шага.</em></p><span class="note-line"></span><small>В вашем темпе.</small></div>
+    <div class="local-note"><span aria-hidden="true" class="status-dot"></span>Ваши задачи — в вашем браузере</div>
+  </aside>
+  <div class="page">
+    <header class="topbar"><span>Ваше пространство для главного</span><span class="quiet-badge"><span aria-hidden="true" class="status-dot"></span>Без суеты</span></header>
+    <main id="main" tabindex="-1">
+      <div class="eyebrow">ОДНО ДЕЛО ЗА РАЗ</div>
+      <div class="heading-row"><h1>Мои задачи<span>.</span></h1><span class="heading-icon" aria-hidden="true"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4v40M4 24h40M10 10l28 28M10 38l28-28"/></svg></span></div>
+      <p class="intro">Освободите голову. Всё важное — здесь.</p>
+      <section class="progress-card" aria-label="Прогресс выполнения">
+        <div class="progress-top"><div><span class="section-label">Ваш прогресс</span><p id="progress-caption">Начните с одной небольшой задачи</p></div><span class="progress-percent" id="progress-percent">0<span>%</span></span></div>
+        <progress id="progress" max="100" value="0" aria-label="Выполнено задач">0%</progress>
+        <div class="progress-bottom"><span id="completed-count">Выполнено 0 из 0</span><span id="encouragement">Маленький шаг — уже начало</span></div>
+      </section>
+      <section class="tasks-section" aria-label="Список задач">
+        <form id="task-form" novalidate>
+          <label for="task-input" class="sr-only">Новая задача</label>
+          <div class="input-wrap"><span class="input-plus" aria-hidden="true">+</span><input id="task-input" name="task" type="text" placeholder="Что нужно сделать?" maxlength="1000" autocomplete="off" aria-describedby="input-hint input-error"><button class="add-button" type="submit"><span aria-hidden="true">+</span>Добавить</button></div>
+          <div class="input-meta"><span id="input-hint">Запишите задачу и нажмите <kbd>Enter</kbd></span><span>До 1000 символов</span></div>
+          <p id="input-error" class="input-error" role="alert" hidden></p>
+        </form>
+        <div class="list-toolbar"><div class="filters" role="group" aria-label="Фильтр задач"><button type="button" class="filter is-selected" data-filter="all" aria-pressed="true">Все <span id="count-all">0</span></button><button type="button" class="filter" data-filter="active" aria-pressed="false">Активные <span id="count-active">0</span></button><button type="button" class="filter" data-filter="completed" aria-pressed="false">Выполненные <span id="count-completed">0</span></button></div><span id="active-summary" class="active-summary">Нет активных задач</span></div>
+        <ul id="task-list" class="task-list" aria-label="Задачи"></ul>
+        <div id="empty-state" class="empty-state"><div class="empty-art" aria-hidden="true"><span>✓</span><i></i><i></i></div><h2 id="empty-title">Место для ваших планов</h2><p id="empty-description">Добавьте первую задачу.<br>Большего для начала не нужно.</p><button type="button" id="empty-action">Записать первую задачу <span aria-hidden="true">↗</span></button></div>
+        <p id="storage-warning" class="storage-warning" role="alert" hidden></p>
+      </section>
+      <footer class="main-footer"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><span id="save-status">Сохраняется автоматически</span></span><span>Простой список. Ясная голова.</span></footer>
+    </main>
+  </div>
+  <div id="announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <template id="task-template"><li class="task-row"><label class="task-label"><input type="checkbox"><span class="check-visual" aria-hidden="true"></span><span class="task-text"></span></label><button type="button" class="delete-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5m4-5v5"/></svg></button></li></template>
+  <noscript><div class="noscript">Для работы списка задач включите JavaScript в настройках браузера.</div></noscript>
+</body>
+</html>
