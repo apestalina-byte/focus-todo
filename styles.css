@@ -608,14 +608,14 @@ kbd {
 }
 
 .is-completed .task-text {
-  color:#89917f;
+  color:#5b6a58;
   text-decoration:line-through;
   text-decoration-color:#b5bda9;
 }
 
 .delete-button {
-  width:36px;
-  height:36px;
+  width:44px;
+  height:44px;
   display:grid;
   place-items:center;
   background:transparent;
